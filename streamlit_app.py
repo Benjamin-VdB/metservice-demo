@@ -3,6 +3,10 @@ import pandas as pd
 import streamlit as st
 from vega_datasets import data
 
+import sagemaker
+
+sess = sagemaker.Session()
+
 st.set_page_config(
     page_title="Time series annotations", page_icon="⬇", layout="centered"
 )
